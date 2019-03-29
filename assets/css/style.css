@@ -1,0 +1,19 @@
+.gifButtons{
+    margin: 8px;
+};
+
+.gif-btn{
+    background-color: blueviolet;
+    margin: 8px;
+
+};
+
+.gifDiv{
+    float:left;
+    margin: 10px;
+};
+
+.gifResults{
+    overflow: auto;
+    clear:both;
+};
