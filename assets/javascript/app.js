@@ -33,6 +33,7 @@ $(document).ready(function () {
 
     //Now we work with the Giphy API with AJAX
     function displayGifs() {
+        $(".giResults").empty();
         var gifSearch = $(this).attr("data-name");
         var apikey = "RSokeaFMOHNyO8gDOJYOaM2y3N9TOy7i";
         var limit = 10;
@@ -88,8 +89,8 @@ $(document).ready(function () {
                     //Rating for the gif
                     p.text("Rating: " + (results[j].rating).toUpperCase());
                     //Append the static gif and rating
-                    var newWidth = parseInt(results[j].images.fixed_height.width);
-                    gifDiv.css("width", newWidth+"px");
+                    var newWidth = 250;//parseInt(results[j].images.fixed_height.width);
+                    gifDiv.css("width", newWidth +"px");
                     gifDiv.append(imGif);
                     gifDiv.append(t);
                     gifDiv.append(p);

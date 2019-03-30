@@ -1,19 +1,27 @@
-.gifButtons{
-    margin: 8px;
-};
-
-.gif-btn{
-    background-color: blueviolet;
-    margin: 8px;
-
-};
-
-.gifDiv{
-    float:left;
-    margin: 10px;
-};
-
 .gifResults{
-    overflow: auto;
-    clear:both;
+    display:grid; 
+    grid-template-columns: repeat(4, 250px); 
+    grid-gap: 10px; 
+    grid-auto-rows: minmax(150px, auto); 
+    justify-content: center; 
+    box-sizing: border-box;
 };
+
+/*.btn-info{
+    background: powderblue;
+    border-color:paleturquoise;
+    margin: 3px;
+};
+
+.btn-info:hover{
+    background: paleturquoise;
+};
+
+.gifDiv, .card{
+    padding: 0;
+    margin: 0;
+    width:250px;
+ };
+*/
+
+
