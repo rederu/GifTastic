@@ -3,7 +3,7 @@
 ///Global Variables Here///
 ///////////////////////////
 //Array of topics
-var topics = ["final fantasy", "kingdom hearts", "tales of symphonia", "god of war"];
+var topics = ["math lady", "one does not simply", "dramatical chipmunk", "everything is fine", "john travolta"];
 
 
 
@@ -33,7 +33,6 @@ $(document).ready(function () {
 
     //Now we work with the Giphy API with AJAX
     function displayGifs() {
-        $(".giResults").empty();
         var gifSearch = $(this).attr("data-name");
         var apikey = "RSokeaFMOHNyO8gDOJYOaM2y3N9TOy7i";
         var limit = 10;
@@ -60,11 +59,11 @@ $(document).ready(function () {
                     var a = $("<a>")
 
                     //Add classes to labels
-                    gifDiv.addClass("gifDiv card");
+                    gifDiv.addClass("gifDiv card bg-transparent");
                     p.addClass("gifRating");
                     imGif.addClass("gif");
                     t.addClass("gifTitle");
-
+                    a.addClass("card-header bg-transparent");
                     //Add multiple attributes to the img label to animate the gifs later
                     imGif.attr({
                         "src": results[j].images.fixed_height_still.url,
@@ -90,11 +89,12 @@ $(document).ready(function () {
                     p.text("Rating: " + (results[j].rating).toUpperCase());
                     //Append the static gif and rating
                     var newWidth = 250;//parseInt(results[j].images.fixed_height.width);
-                    gifDiv.css("width", newWidth +"px");
+                    gifDiv.css("width", newWidth+"px");
+                    gifDiv.append(a);
                     gifDiv.append(imGif);
                     gifDiv.append(t);
                     gifDiv.append(p);
-                    gifDiv.append(a);
+                    
                     //Show static gif on gifResults div
                     $(".gifResults").prepend(gifDiv);
                 } //End for cycle
@@ -172,6 +172,7 @@ HTML Classes:
 Javascript/jQuery generated classes:
 .gif-btn (For each gif button)
 .gifDiv for the div containing the gif and the rating
+.card for contain the image and text
 .gifRating for the Rating text
 .gif for the gif
 
