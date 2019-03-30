@@ -1,27 +1,47 @@
+
+body {
+    height: 100%;
+    background-image: url("../images/abstract_design_background_3007.jpg");
+    /* Center and scale the image nicely */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 .gifResults{
     display:grid; 
     grid-template-columns: repeat(4, 250px); 
-    grid-gap: 10px; 
+    grid-gap: 15px; 
     grid-auto-rows: minmax(150px, auto); 
     justify-content: center; 
     box-sizing: border-box;
 };
 
-/*.btn-info{
-    background: powderblue;
-    border-color:paleturquoise;
-    margin: 3px;
+body, html {
+    height: 100%;
 };
 
-.btn-info:hover{
-    background: paleturquoise;
-};
 
-.gifDiv, .card{
+/*.gifDiv, .card{
     padding: 0;
     margin: 0;
     width:250px;
  };
+ .btn-info{
+    background: powderblue;
+    border-color:paleturquoise;
+    margin: 4px;
+};
+
+
+
+h1 {
+    font-family: 'Fontdiner Swanky', cursive ;
+    font-size: 4.5rem ;
+    padding-top: 15px ;
+    padding-bottom: 10px ;
+    text-shadow: 11px 9px 10px black;
+    
+};
 */
-
-

@@ -8,17 +8,19 @@
   <!--Custom CSS-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Fontdiner+Swanky|Freckle+Face" rel="stylesheet">   
   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-
+ 
 </head>
 
 <body>
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <h2>GifTastic!!</h2>
+      <div class="col-md-12 col-xs-12">
+        <h1 style="font-family: 'Fontdiner Swanky', cursive;font-size: 4.5rem;
+        padding-top: 15px;padding-bottom: 10px;text-shadow: 11px 9px 10px black; color:#f5e7e8;">GifTastic!!</h1>
       </div>
-      <div class="col-md-8">
+      <div class="col-md-8 col-xs-12">
         <div class="gifButtons"></div>
       </div>
       <div class="col-md-4 searchGif">
@@ -28,12 +30,14 @@
             <label for="topicToSearch" class="textSearch">Add a topic</label>
             <input type="text" class="form-control" id="addTopic" placeholder="Gif Search...">
           </div>
-          <button type="submit" class="submiTopic btn btn-primary mt-3 mr-2 ml-2">Submit</button>
+          <button type="submit" class="submiTopic btn btn-primary mt-3 mr-2 ml-2">Add Button</button>
           <button type="button" class=" clearResults btn btn-secondary mt-3 ml-2 mr-2">Clear Gifs</button>
         </form>
       </div>
     </div>
   </div>
+
+
   <div class="container">
     <div class="gifResults"></div>
   </div>

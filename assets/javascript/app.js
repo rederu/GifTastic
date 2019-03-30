@@ -3,7 +3,7 @@
 ///Global Variables Here///
 ///////////////////////////
 //Array of topics
-var topics = ["math lady", "one does not simply", "dramatical chipmunk", "everything is fine", "john travolta"];
+var topics = ["math lady", "one does not simply", "hold my beer", "this is fine", "john travolta"];
 
 
 
@@ -21,7 +21,7 @@ $(document).ready(function () {
         for (var i = 0; i < topics.length; i++) {
             //Create the label, its class, attributes, and text displayed
             var button = $("<button>");
-            button.addClass("btn btn-info btn-sm gif-btn");
+            button.addClass("btn btn-info btn-sm gif-btn m-1");
             button.attr("data-name", topics[i]);
             button.text(topics[i]);
             //Add to the gif buttons section
