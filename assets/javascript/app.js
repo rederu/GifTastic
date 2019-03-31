@@ -3,7 +3,7 @@
 ///Global Variables Here///
 ///////////////////////////
 //Array of topics
-var topics = ["math lady", "one does not simply", "hold my beer", "this is fine", "john travolta"];
+var topics = ["confused lady", "one does not simply", "hold my beer", "this is fine", "john travolta"];
 
 
 
