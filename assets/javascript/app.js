@@ -36,7 +36,8 @@ $(document).ready(function () {
         $(".gifResults").empty();
         var gifSearch = $(this).attr("data-name");
         var apikey = "RSokeaFMOHNyO8gDOJYOaM2y3N9TOy7i";
-        var limit = 10;
+        //Ok, limit 12 because I really hate how it looks only to display 10 in a 4-column grid
+        var limit = 12;
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifSearch + "&api_key=" + apikey + "&limit=" + limit;
         console.log(queryURL);
         $.ajax({
@@ -95,7 +96,9 @@ $(document).ready(function () {
                     gifDiv.append(p);
                     
                     //Show static gif on gifResults div
-                    $(".gifResults").prepend(gifDiv);
+                    //$(".gifResults").prepend(gifDiv);
+                    //Decided for append since it is easier to see the first result in the search and we are not adding the previous search in order to make it bearable for mobile 
+                    $(".gifResults").append(gifDiv);
                 } //End for cycle
             })//End then
     }//End function displayGifs
