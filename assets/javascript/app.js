@@ -57,7 +57,6 @@ $(document).ready(function () {
                     ///download button
                     var dButton = $("<img>");
                     var a = $("<a>")
-
                     //Add classes to labels
                     gifDiv.addClass("gifDiv card bg-transparent");
                     p.addClass("gifRating");
@@ -104,7 +103,7 @@ $(document).ready(function () {
 
     //So, let's animate the static gifs.... or make static the animated gifs
     function animateGifs() {
-        //Get value of the state
+        //Get value of the state (animate, still)
         var state = $(this).attr("gif-state");
 
         //If state is still changes the img source to gif-animate and the attribute to animate
@@ -119,9 +118,6 @@ $(document).ready(function () {
     }//End function animateGifs
 
 
-
-
-
     ///////////////////////////////////////////////
     /// Function Event Listeners, do not disturb///
     //////////////////////////////////////////////
@@ -132,7 +128,7 @@ $(document).ready(function () {
         var newTopic = $("#addTopic").val().trim();
         newTopic = newTopic.toLowerCase();
         //To avoid repeated buttons
-        if (topics.includes(newTopic)) {
+        if (topics.includes(newTopic) || newTopic =="") {
             displayButtons();
         } else {
             topics.push(newTopic);
