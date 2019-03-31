@@ -21,7 +21,7 @@ $(document).ready(function () {
         for (var i = 0; i < topics.length; i++) {
             //Create the label, its class, attributes, and text displayed
             var button = $("<button>");
-            button.addClass("btn btn-info btn-sm gif-btn m-1");
+            button.addClass("btn btn-info btn-sm m-1 gif-btn");
             button.attr("data-name", topics[i]);
             button.text(topics[i]);
             //Add to the gif buttons section
@@ -33,6 +33,7 @@ $(document).ready(function () {
 
     //Now we work with the Giphy API with AJAX
     function displayGifs() {
+        $(".gifResults").empty();
         var gifSearch = $(this).attr("data-name");
         var apikey = "RSokeaFMOHNyO8gDOJYOaM2y3N9TOy7i";
         var limit = 10;
@@ -49,7 +50,6 @@ $(document).ready(function () {
 
                 for (var j = 0; j < results.length; j++) {
                     //Here goes what will happen with the results
-                    //1. Grab 10 static, non-animated gifs and place them on the page
                     var gifDiv = $("<div>");
                     var t = $("<h6>");
                     var p = $("<p>");
@@ -88,8 +88,8 @@ $(document).ready(function () {
                     //Rating for the gif
                     p.text("Rating: " + (results[j].rating).toUpperCase());
                     //Append the static gif and rating
-                    var newWidth = 250;//parseInt(results[j].images.fixed_height.width);
-                    gifDiv.css("width", newWidth+"px");
+                    //var newWidth = 250;//parseInt(results[j].images.fixed_height.width);
+                    //gifDiv.css("width", newWidth+"px");
                     gifDiv.append(a);
                     gifDiv.append(imGif);
                     gifDiv.append(t);

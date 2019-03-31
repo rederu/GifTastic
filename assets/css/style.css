@@ -1,3 +1,6 @@
+body, html {
+    height: 100%;
+}
 
 body {
     height: 100%;
@@ -9,39 +12,76 @@ body {
     background-size: cover;
 }
 
-.gifResults{
-    display:grid; 
-    grid-template-columns: repeat(4, 250px); 
-    grid-gap: 15px; 
-    grid-auto-rows: minmax(150px, auto); 
-    justify-content: center; 
+.gifResults {
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-gap: 15px;
+    grid-auto-rows: minmax(150px, auto);
+    justify-content: center;
     box-sizing: border-box;
-};
+}
 
 body, html {
     height: 100%;
-};
+}
 
-
-/*.gifDiv, .card{
+.gifDiv, .card {
     padding: 0;
     margin: 0;
-    width:250px;
- };
- .btn-info{
+    width: 250px;
+}
+
+.btn-info {
     background: powderblue;
-    border-color:paleturquoise;
+    border-color: paleturquoise;
     margin: 4px;
-};
-
-
+}
 
 h1 {
-    font-family: 'Fontdiner Swanky', cursive ;
-    font-size: 4.5rem ;
-    padding-top: 15px ;
-    padding-bottom: 10px ;
+    font-family: 'Fontdiner Swanky', cursive;
+    font-size: 4.5rem;
+    padding-top: 15px;
+    padding-bottom: 10px;
     text-shadow: 11px 9px 10px black;
+    color: #f5e7e8;
+}
+
+.gifButtons {
+
+    align-items: center;
     
-};
-*/
+}
+
+.card-header {
+    text-align: right;
+}
+
+@media screen and (min-width:769px) and (max-width: 1199px) {
+    .gifResults {
+        grid-template-columns: repeat(3, 250px);
+        justify-content: center;
+    }
+    h1 {
+        font-size: 4rem;
+    }
+}
+
+@media screen and (min-width:641px) and (max-width:768px) {
+    .gifResults {
+        grid-template-columns: repeat(2, 250px);
+        justify-content: center;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .gifResults {
+        grid-template-columns: repeat(1, 250px);
+        justify-content: center;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
