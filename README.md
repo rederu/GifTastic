@@ -11,3 +11,5 @@ When the user clicks on a button, it will use the Giphy API to search for 12 gif
 As stated before, the gifs will be displayed as non-animated. To animate the gif it is necessary to click on the gif.
 
 The user can add topics to its search by just adding a new topic in the Add topic box. This will create a new button in  the buttons section.
+
+This project is mobile responsive. 
