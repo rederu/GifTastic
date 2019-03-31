@@ -1,6 +1,6 @@
 # GifTastic
 
-For this task, was used the Giphy API aling with Javascript and jQuery to  make a webpage that could display a grid of gifs populated by the user's topic of choice.
+For this task the Giphy API was used along with Javascript and jQuery to  make a webpage that could display a grid of gifs populated by the user's topic of choice.
 
 <h2>How does it work</h2>
 
