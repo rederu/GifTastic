@@ -4,8 +4,9 @@
 ///////////////////////////
 //Array of topics
 var topics = ["confused lady", "one does not simply", "hold my beer", "this is fine", "john travolta"];
-
-
+//Ok, limit 12 because I really hate how it looks only to display 10 in a 4-column grid
+var limit = 10;
+var tempSearch;
 
 /////////////////////
 ///Functions Here///
@@ -35,9 +36,16 @@ $(document).ready(function () {
     function displayGifs() {
         $(".gifResults").empty();
         var gifSearch = $(this).attr("data-name");
+        if (tempSearch == gifSearch){
+            limit= limit + 10;
+            if(limit > 40){
+                limit=40;
+                alert("Sorry, only 40 gif max");
+            }
+        }else{
+            limit=10;
+        }
         var apikey = "RSokeaFMOHNyO8gDOJYOaM2y3N9TOy7i";
-        //Ok, limit 12 because I really hate how it looks only to display 10 in a 4-column grid
-        var limit = 12;
         var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + gifSearch + "&api_key=" + apikey + "&limit=" + limit;
         console.log(queryURL);
         $.ajax({
@@ -88,19 +96,17 @@ $(document).ready(function () {
                     //Rating for the gif
                     p.text("Rating: " + (results[j].rating).toUpperCase());
                     //Append the static gif and rating
-                    //var newWidth = 250;//parseInt(results[j].images.fixed_height.width);
-                    //gifDiv.css("width", newWidth+"px");
                     gifDiv.append(a);
                     gifDiv.append(imGif);
                     gifDiv.append(t);
                     gifDiv.append(p);
-                    
                     //Show static gif on gifResults div
-                    //$(".gifResults").prepend(gifDiv);
-                    //Decided for append since it is easier to see the first result in the search and we are not adding the previous search in order to make it bearable for mobile 
-                    $(".gifResults").append(gifDiv);
+                    $(".gifResults").prepend(gifDiv);
+                    //$(".gifResults").append(gifDiv);
                 } //End for cycle
             })//End then
+            $(".goBack").show();
+        tempSearch = gifSearch;
     }//End function displayGifs
 
 
@@ -154,9 +160,11 @@ $(document).ready(function () {
     $(".clearResults").click(function () {
         event.preventDefault();
         $(".gifResults").empty();
+        $(".goBack").hide();
     });
 
     displayButtons();
+    $(".goBack").hide();
 
 
 });

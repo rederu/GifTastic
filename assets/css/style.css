@@ -12,6 +12,10 @@ body {
     background-size: cover;
 }
 
+.container{
+    margin-bottom: 20px;
+}
+
 .gifResults {
     display: grid;
     grid-template-columns: repeat(4, 250px);
@@ -47,13 +51,21 @@ h1 {
 }
 
 .gifButtons {
-
     align-items: center;
-    
 }
 
 .card-header {
     text-align: right;
+}
+
+.goBack{
+    text-align: right;
+    font-weight: bolder;
+}
+
+.goBack a{
+    text-decoration: none;
+    color: purple;
 }
 
 @media screen and (min-width:769px) and (max-width: 1199px) {
