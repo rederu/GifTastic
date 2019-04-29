@@ -13,3 +13,6 @@ As stated before, the gifs will be displayed as non-animated. To animate the gif
 The user can add topics to its search by just adding a new topic in the Add topic box. This will create a new button in  the buttons section.
 
 This project is mobile responsive. 
+
+<h3>Live Demo:</h3>
+https://github.com/rederu/GifTastic
