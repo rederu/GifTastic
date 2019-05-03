@@ -15,4 +15,4 @@ The user can add topics to its search by just adding a new topic in the Add topi
 This project is mobile responsive. 
 
 <h3>Live Demo:</h3>
-https://github.com/rederu/GifTastic
+https://rederu.github.io/GifTastic
