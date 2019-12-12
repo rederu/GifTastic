@@ -1,6 +1,8 @@
 # GifTastic
 
-For this task the Giphy API was used along with Javascript and jQuery to  make a webpage that could display a grid of gifs populated by the user's topic of choice.
+<center><img src="https://i.imgur.com/56UyU6O.png"/></center>
+
+For this app Giphy API was used along with Javascript and jQuery to  make a webpage that could display a grid of gifs populated by the user's topic of choice.
 
 <h2>How does it work</h2>
 
@@ -14,5 +16,14 @@ The user can add topics to its search by just adding a new topic in the Add topi
 
 This project is mobile responsive. 
 
+<h3>Technologies used for Giftastic</h3>
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>Javascript</li>
+  <li>jQuery</li>
+  <li>Giphy API</li>
+ </ul>
+
 <h3>Live Demo:</h3>
-https://rederu.github.io/GifTastic
+<a href="https://rederu.github.io/GifTastic">GifTastic!!</a>
