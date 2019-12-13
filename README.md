@@ -14,6 +14,8 @@ As stated before, the gifs will be displayed as non-animated. To animate the gif
 
 The user can add topics to its search by just adding a new topic in the Add topic box. This will create a new button in  the buttons section.
 
+<img src="https://i.imgur.com/da6degN.png">
+
 This project is mobile responsive. 
 
 <h3>Technologies used for Giftastic</h3>
