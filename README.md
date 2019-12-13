@@ -1,4 +1,3 @@
-# GifTastic
 
 <center><img src="https://i.imgur.com/56UyU6O.png"/></center>
 
